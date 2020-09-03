@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    byebug (10.0.2)
     colorize (0.8.1)
     diff-lcs (1.4.4)
     highline (2.0.3)
@@ -30,7 +29,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
   colorize
   progress_bar
   rspec
