@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../url_status.rb', File.dirname(__FILE__))
+require File.expand_path('../url_status/option_parser.rb', File.dirname(__FILE__))
+
+begin
+  unless ARGV[0]
+    puts 'Usage: start path-to.csv'
+    exit
+  end
+  URLStatus.run(ARGV[0])
+rescue StandardError => e
+  puts "#{e.message.colorize(:red)}\n#{e.backtrace.first}"
+end
