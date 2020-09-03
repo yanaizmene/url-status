@@ -5,6 +5,7 @@ module URLStatus
     attr_reader :url, :checker, :available, :http_code, :http_message
 
     def self.build(url)
+      url = url.strip
       url = "https://#{url}" unless url =~ %r{https?://}
       url = new(url)
       url.check
