@@ -9,6 +9,7 @@ Supports output to console or file in pretty or csv format.
 To get list of available options type `bin/start -h`
 
 ## TODO
+- Boost check speed via concurrent requests implemented via fibers.
 - Add ability to pass csv via STDIN instead of file for piping support
 - Add ability to specify CSV options (column and row separators, quote character, etc)
 - Add filtering functionality (display only available urls for example)
