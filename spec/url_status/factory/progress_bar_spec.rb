@@ -16,7 +16,7 @@ RSpec.describe URLStatus::Factory::ProgressBar do
     end
 
     context 'when progress bar disabled' do
-      it 'returns ProgressBar instance' do
+      it 'returns Duck' do
         obj = described_class.produce(10, false)
         expect(obj).to be_a(OpenStruct)
       end
