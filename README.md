@@ -1,5 +1,5 @@
 # URL Status Console Utility
-Reads list of domains from csv file and outputs results of check.
+Reads list of domains from csv file and check them for accessibility.
 Supports output to console or file in pretty or csv format.
 
 ## Usage
